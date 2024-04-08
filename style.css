@@ -141,7 +141,13 @@ section img#mountains_front {
 }
 
 .sec h2 {
-    font-size: 3.5em;
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec h3 {
+    font-size: 2em;
     margin-bottom: 10px;
     color: #fff;
 }
