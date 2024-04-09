@@ -1,7 +1,7 @@
 # Welcome to AppMakors Organization
 
 ## About Us
-AppMakors is a collaborative organization dedicated to developing a wide range of software applications, including Windows desktop applications, Android mobile apps, and websites. Founded by Vo Tran Phi and Le Anh Khoi, our team brings together expertise in various technologies and frameworks to create innovative solutions for diverse needs.
+AppMakors is a collaborative organization dedicated to developing a wide range of software applications, including Windows desktop applications, Android mobile apps, websites and games. Founded by Vo Tran Phi and Le Anh Khoi, our team brings together expertise in various technologies and frameworks to create innovative solutions for diverse needs.
 
 ## Our Projects
 Explore our repositories to discover a diverse array of projects, including:
