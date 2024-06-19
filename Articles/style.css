@@ -22,13 +22,38 @@
 }
 
 .article {
+    display: flex;
+    align-self: center;
     margin: 50px auto;
     width: 50%;
-    height: 100px;
-    border: 1px white solid;
+    border: 2px white solid;
     border-radius: 20px;
+
+    overflow: hidden;
 }
 
-.article .title {
+.article div .title {
+    margin: 20px 10px 10px 20px;
+    color: rgb(89, 89, 220);
+}
+
+.article img {
+    border: 2px white solid;
+    border-radius: 9px;
+    margin: 10px;
+    height: 150px;
+}
+
+.article div .brief {
     margin: 20px;
+}
+
+.article div .credits {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article div .credits .author {
+    color: cyan;
 }
