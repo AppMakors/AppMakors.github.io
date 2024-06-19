@@ -1,0 +1,78 @@
+<a href="#" class="logo">Logo</a>
+<ul>
+    <li><a onclick="javascript:home()">Home</a></li>
+    <li><a onclick="javascript:vocab()">VocabLearning</a></li>
+    <li><a onclick="javascript:article()">Articles</a></li>
+    <li><a onclick="javascript:about()">About</a></li>
+</ul>
+<style>
+    header {    
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10000;
+    }
+
+    header .logo {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2em;
+        /* text-decoration: none; */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    header ul li a {
+        color: #fff;
+        padding: 6px 15px 6px 15px;
+        border-radius: 20px;
+        border-style: solid;
+        background-color: none;
+        cursor: pointer;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+        color: #fff;
+        /* padding: 6px 15px 6px 15px; */
+        /* border-color: black; */
+        border-radius: 20px;
+        background-color: none;
+        border-style: dashed;
+    }
+</style>
+<script>
+    var path = window.location.pathname;
+    var pathArr = path.split('/');
+
+    function home() {
+        window.location.href = "/..".repeat(pathArr.length - 2) + "/index.html";
+    }
+
+    function vocab() {
+        window.location.href = "/..".repeat(pathArr.length - 2) + "/VocabLearning/index.html";
+    }
+    
+    function article() {
+        window.location.href = "/..".repeat(pathArr.length - 2) + "/Articles/index.html";
+    }
+
+    function about() {
+        window.location.href = "/..".repeat(pathArr.length - 2) + "/About/index.html";
+    }
+</script>

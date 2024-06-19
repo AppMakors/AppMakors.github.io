@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <title>AppMakors</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+            $("#header").load("/header.html");
+        }); 
+    </script>
 </head>
 
 <body>
-    <!-- <p>Xin chào mọi người</p> -->
-    <header>
-        <!-- this line is for the logo of the page (maybe in the top left) -->
-        <a href="#" class="logo">Logo</a>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="/VocabLearning/index.html">VocabLearning</a></li>
-            <li><a href="/About/index.html">About</a></li>
-        </ul>
-    </header>
+    <header style="position: absolute;" id="header"></header>
     <section>
         <img src="img/stars.png" id="stars">
         <img src="img/moon.png" id="moon">
