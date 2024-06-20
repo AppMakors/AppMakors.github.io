@@ -23,7 +23,7 @@
 
 .article {
     display: flex;
-    align-self: center;
+    align-items: center;
     margin: 50px auto;
     width: 50%;
     border: 2px white solid;
@@ -56,4 +56,43 @@
 
 .article div .credits .author {
     color: cyan;
+}
+
+#introduction h3 {
+    margin: auto;
+    width: 50%;
+    text-align: left;
+}
+
+#opening {
+    text-indent: 50px;
+}
+
+#main-content p {
+    margin: 30px auto;
+    width: 50%;
+    text-align: left;
+}
+
+#main-content h1 {
+    margin: 30px auto;
+    width: 50%;
+}
+
+#main-content p a {
+    color: cyan;
+}
+
+#main-content #code {
+    width: 45%;
+    margin: auto;
+    border: 3px white solid;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: left;
+
+    font-family: monospace;
+    font-size: larger;
+
+    background-color: #3d3b3b;
 }

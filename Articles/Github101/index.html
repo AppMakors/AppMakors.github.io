@@ -16,7 +16,97 @@
     </script>
     <title>AppMakors | Github 101</title>
 </head>
+
+<header id="header" style="border-bottom: 1px white  solid;"></header>
+
 <body>
-    
+    <div id="introduction">
+        <h1>Github 101</h1>
+        <h3>This is a guide to use Git for beginners, this article includes some tips and tricks helpful for using Git and Github for source control</h3>
+    </div>
+
+    <hr style="width: 50%; margin: 10px auto">
+
+    <div id="main-content">
+        <p id="opening">
+            Hello, everyone may have already heard about "Git" and "Github", but only few that can apply them effectively into their job, this article will clearify how Git and Github works and how you can use it to dominate your development journey.
+        </p>
+
+        <p>
+            Trước tiên, chúng ta cần biết những câu lệnh mà Git hỗ trợ:
+        </p>
+
+        <h1>
+            1. git add [options]...
+        </h1>
+
+        <p>
+            Đầu tiên, chúng ta phải hiểu rằng, khi muốn đẩy code của mình lên Remote repo, Git không trực tiếp đẩy lên thông qua một lệnh mà nó sẽ "đóng gói" vào một cái thùng (hiểu sơ là vậy), sau đó làm một số thủ tục thì mới có thể đẩy lên. Thì lệnh này được dùng để bỏ các file có sự thay đổi vào "cái thùng" đó.
+        </p>
+
+        <p>
+            Trên trang chủ của <a href="https://git-scm.com/docs/git-add" target="_blank">git</a>, có rất nhiều option được hỗ trợ, tuy nhiên, cho người mới bắt đầu, có 2 câu lệnh đơn giản như sau:
+        </p>
+
+        <div id="code">
+            git add .   //add hết tất cả các files có thay đổi trong directory đang dùng
+            <br>
+            git add [filename] //chỉ add filename được liệt kê
+        </div>
+
+        <h1>
+            2. git commit
+        </h1>
+
+        <p>
+            Tiếp theo, để cái thùng đó có "lý do gửi đi" hoặc hiểu đơn giản là một cái ghi chú cho sự thay đổi của code có ý nghĩa gì, ta sẽ có lệnh này
+        </p>
+
+        <div id="code">
+            git commit -m "*ghi chú*"
+        </div>
+
+        <p>
+            Khi làm việc nhóm, chúng ta cần viết những ghi chú có ý nghĩa để dễ kiểm soát sự thay đổi của source, theo <a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/" target="_blank">bài viết này</a> ở FreeCodeCamp, votranphi đã tổng hợp được các quy ước khi viết ghi chú như sau:
+        </p>
+
+        <div id="code">
+            1. feat - tính năng mới <br>
+            Ví dụ: "feat: run timer", "feat: competition mode"
+            <br> <br>
+            2. fix - sửa lỗi <br>
+            Ví dụ: "fix: time is not correct", "fix: wrong file path"
+            <br> <br>
+            3. refactor - cấu trúc lại <br>
+            Được dùng khi bạn thay đổi tên biến, tên lớp, comment,... mà không thêm tính năng mới hay sửa lỗi gì <br>
+            Ví dụ: "refactor: change timor -> timer", "refactor: comment changes"
+            <br> <br>
+            4. chore - những việc lặt vặt <br>
+            Được dùng khi có những thay đổi bên ngoài source code, mà liên quan tới các file Dependency, file Config, Nuget,... <br>
+            Ví dụ: "chore: add Newtonsoft.Json package", "chore: remove HtmlAgilityPack package"
+            <br> <br>
+            5. docs - những thay đổi liên quan tới "tài liệu" hoặc hướng dẫn của phần mềm <br>
+            Ví dụ: "docs: upload README.md", "docs: update README.md"
+            <br> <br>
+            6. style - nghe là biết rồi hehe <br>
+            Được dùng khi không thay đổi gì liên quan đến ngữ nghĩa hay cách hoạt động của code mà chỉ là format lại code sao cho nhìn nó đẹp hơn <br>
+            Ví dụ: "style: change braces formatting", "style: change operators/operands formatting" 
+            <br> <br>
+            7. revert - quay lại commit trước <br>
+            Hiểu đơn giản giống như "ctrl-z" lại các cập nhật trước đó <br>
+            Ví dụ: "revert: revert to 25b2630", "revert: revert to previous commit"
+            <br> <br>
+            8. perf - những thay đổi liên quan đến cải thiện hiệu năng <br>
+            Ví dụ: "perf: using quick sort instead of bogo sort", "perf: two for loops -> one for loop"
+            <br> <br>
+            9. test - hehe chưa biết rõ
+            <br> <br>
+            10. ci - hehe chưa biết rõ
+            <br> <br>
+            11. build - hehe chưa biết rõ
+        </div>
+            
+    </div>
 </body>
+
 </html>
