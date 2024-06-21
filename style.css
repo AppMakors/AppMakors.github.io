@@ -60,15 +60,33 @@ section img#mountains_front {
     z-index: 10;
 }
 
-#text {
+#text-wrapper {
+    display: flex;
     position: absolute;
-    right: 0px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    /* right: 0px; */
     color: white;
     white-space: nowrap;
-    font-size: 7.5vw;
+    font-size: 4vw;
     text-transform: uppercase;
     /* font-size: 1.5em; */
+    padding: 0 6rem;
     z-index: 9;
+    animation: move-rtl 1000ms linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 #btn {
