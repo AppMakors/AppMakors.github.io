@@ -15,27 +15,22 @@
         }); 
     </script>
 
-    <title>AppMakors | VocabLearning</title>
+    <title>AppMakors | Rubiks Timor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/diy6oyo6l/image/upload/v1719283123/appmakors_logo_yuz1xr.png">
 </head>
 
 <body>
-    <header id="header"></header>
-    <div>
-        <h1 id="title">Dictionary</h1>
-    </div>
-
-    <div id="inputWrapper">
-        <input id="wordInput" type="text">
-        <button id="button">get</button>
-    </div>
-
-    <div id="result">
-    </div>
-
-    <div id="wordResult">
-        <pre id="json"></pre>
+    <header id="header" style="border-bottom: 1px white solid;"></header>
+    <div id="wrapper">
+        <div class="left-panel">
+            <ul id="solve-list" class="solve-list">
+                <div class="clearer" onclick="javascript:clearList()">Clear</div>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="timer">0.000</div>
+        </div>
     </div>
 </body>
 <script src="app.js"></script>
