@@ -1,7 +1,7 @@
 {
-  "name": "demo-repo",
-  "version": "0.2.0",
-  "description": "A sample package.json",
+  "name": "app-makors",
+  "version": "0.0.1",
+  "description": "AppMakors website",
   "dependencies": {
     "cstimer_module": "^0.1.4"
   },
