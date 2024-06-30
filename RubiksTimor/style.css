@@ -106,3 +106,15 @@ html {
     background-color: white;
     color: black
 }
+
+.scramble-panel {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 1cm;
+}
+
+.scramble-img-panel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
