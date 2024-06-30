@@ -7,7 +7,7 @@ const scramble = document.getElementById("scramble");
 const scrambleImage = document.getElementById("scramble-img");
 
 var cstimerWorker = (function() {
-	var worker = new Worker('/node_modules/cstimer_module/cstimer_module.js');
+	var worker = new Worker('../node_modules/cstimer_module/cstimer_module.js');
 
 	var callbacks = {};
 	var msgid = 0;
